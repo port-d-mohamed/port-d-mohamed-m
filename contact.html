@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>D.Mohamed Mohsen</title>
+    <!-- icon -->
+    <link rel="short icon" type="icon" href="images/logo.png" />
+    <!-- bootstrap.css -->
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <!-- font awesome css-->
+    <link rel="stylesheet" href="css/all.min.css" />
+    <!-- style.css -->
+    <link rel="stylesheet" href="css/contact.css" />
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=El+Messiri:wght@400..700&display=swap" rel="stylesheet">
+<!-- 2 -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cairo:wght@200..1000&family=El+Messiri:wght@400..700&display=swap" rel="stylesheet">
+
+  </head>
+
+  <body dir="rtl">
+    <!-- start header -->
+
+    <header id="top">
+      <!-- Navbar -->
+      <nav class="navbar navbar-expand-lg fixed-top mask-custom">
+        <div class="container">
+          <a class="navbar-brand" href="index.html">
+            <img src="./images/logo.png" alt="" />
+          </a>
+          <a class="navbar-brand  px-2 border-start border-end border-info border-2 pr-2 d-block d-lg-none" href="#">
+            <span class="m-logo">d.Mohamed Mohsen</span>
+        </a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-ico"
+              ><i class="fa-solid fa-bars-staggered"></i
+            ></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav m-auto fw-semibold">
+              <li class="nav-item ms-5">
+                <a class="nav-link " href="index.html">الصفحة الرئيسية</a>
+                <div class="line-nav d-none d-lg-block"></div>
+              </li>
+              <li class="nav-item ms-5">
+                <a class="nav-link" href="articles.html">المقالات</a>
+                <div class="line-nav d-none d-lg-block"></div>
+              </li>
+              <li class="nav-item ms-5">
+                <a class="nav-link" href="news.html">الاخبار</a>
+                <div class="line-nav d-none d-lg-block"></div>
+              </li>
+              <li class="nav-item ms-5">
+                <a class="nav-link" href="about.html"> عنا</a>
+                <div class="line-nav d-none d-lg-block"></div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <!-- Navbar -->
+    </header>
+
+<main>
+
+<section id="top">
+        <div class="perant-sign">
+          <form class="form-sign">
+            <div class="photobg w-100">
+              <h2 class="text-capitalize text-center my-3 fw-bold ">اتصل بنا</h2>
+
+              
+            </div>
+              <!-- 2 column grid layout with text inputs for the first and last names -->
+              <div class="row mb-4">
+                <div class="col-12 col-md-6">
+                  <div class="form-outline">
+                      <label class="form-label" for="firstname">الاسم الاول</label>
+                    <div class="position-relative">
+                    <input type="text" id="firstname" class="form-control" required/>
+                    <div class="icon-input position-absolute"><i class="fa-solid fa-user"></i></div>
+                  </div>
+                  </div>
+                </div>
+                <div class="col-12 col-md-6">
+                  <div class="form-outline">
+                      <label class="form-label" for="lastname">الاسم الاخير</label>
+                    <div class="position-relative">
+                      <input type="text" id="lastname" class="form-control" required/>
+                      <div class="icon-input position-absolute"><i class="fa-solid fa-user"></i></i></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- Email input -->
+              <div class="form-outline mb-4">
+                  <label class="form-label" for="email">الايميل</label>
+                <div class="position-relative">
+                  <input type="email" id="email" class="form-control" required/>
+                  <div class="icon-input position-absolute"><i class="fa-solid fa-envelope"></i></div>
+                </div>
+              </div>
+
+
+
+
+
+
+
+              <!-- Course Materials -->
+              <div class="form-outline mt-4">
+                <label class="form-label " for="form7Example1"><p class="mb-0">اضافه نص</p></label>
+                <textarea type="text" id="form6Example1" class="form-control input1 Introduction-2" ></textarea>
+              </div>
+
+              <!-- card upload -->
+              <div class="upload my-4">
+                <h6 class="mb-3 title-upload ">اضافه صوره</h6>
+                <div class="card-upload position-relative text-center bg-opacity-10 bg-dark p-5">
+
+                  <div class="photo  text-center position-absolute w-100 h-100  ">
+                    <img id="myimage" class="img-fluid position-absolute w-100 h-100 " alt="">
+                  </div>
+
+                  <div class="card-hover position-relative">
+                      <input type="file" class="position-absolute w-100 h-100 file" onchange="onFileSelected(event)" name="photo" id="uploadfo">
+                        <!-- <input type="file" class="position-absolute file"> -->
+
+                      <div>
+                          <img class="svg-upload" src="images/Image upload-bro.svg" alt="">
+                          <h6 class="drog-drop mt-3">Drag & drop files or <span class="browse btn-link" id="browse" type="files">Browse</span> </h6>
+                      </div>
+
+                    </div>
+                    <span class="supported-text text-white-50 text-opacity-50">Supported formates:<span class="supported-type"> JPEG, PNG, GIF, MP4, PDF, PSD, Al, Word, PPT</span></span>
+
+                </div>
+              </div>
+
+
+
+
+
+
+
+
+
+
+
+              <!-- Submit button -->
+            <div class="d-flex row text-center justify-content-center p-0 m-0"> 
+                <button id="Sign-up" type="submit" class="btn loginsu col-12 col-md-5 btn-outline-light  mb-4">ارسال</button>
+            </div>
+              <!-- Register buttons -->
+              <div class="text-center">
+                <p class="text-white">: او تواصل عن طريق</p>
+                <button type="button" class="btn loginsu btn-outline-light pt-2  mx-1">
+                  <i class="fab fa-facebook-f"></i>
+                </button>
+            
+                <button type="button" class="btn loginsu btn-outline-light pt-2   mx-1">
+                  <i class="fab fa-google"></i>
+                </button>
+            
+                <button type="button" class="btn loginsu btn-outline-light pt-2  mx-1">
+                  <i class="fab fa-twitter"></i>
+                </button>
+            
+                <button type="button" class="btn loginsu btn-outline-light pt-2  mx-1">
+                  <i class="fab fa-github"></i>
+                </button>
+              </div>
+          </form>
+      </div>
+</section>
+</main>
+
+<footer
+class="text-white text-center p-3 mt-4"
+style="background-color: var(--soc-bg-color)"
+>
+<div class="d-inline">
+  © 2024 حقوق النشر
+  <a class="text-white" href="#!">BahaaSaber.com</a>
+</div>
+<a href="#" class="top position-absolute">
+  <i class="fa-solid fa-angles-up" style="color: var(--blue)"> </i>
+</a>
+</footer>
+
+
+
+    <!-- bootstrap.js -->
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <!-- font awesome js -->
+    <script src="js/all.min.js"></script>
+    <!-- script.js -->
+    <script src="js/contact.js"></script>
+  </body>
+</html>

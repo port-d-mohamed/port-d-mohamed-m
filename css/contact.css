@@ -1,0 +1,323 @@
+@import url('https://fonts.googleapis.com/css2?family=Aref+Ruqaa:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Aref+Ruqaa:wght@400;700&family=Cairo:wght@200..1000&family=El+Messiri:wght@400..700&display=swap');
+* {
+    margin: 0;
+    text-decoration: none;
+    padding: 0;
+    scroll-behavior: smooth;
+    box-sizing: border-box;
+    transition: all .4s;
+    -webkit-transition: all .4s;
+    -moz-transition: all .4s;
+    -ms-transition: all .4s;
+    -o-transition: all .4s;
+}
+::selection {
+    text-emphasis: none;
+}
+:root {
+    --blue : #0ef ;
+    --red : #FF0000 ;
+    --Green:#34A853;
+    --Grey:#D0D0D0;
+    --Black:#000;
+    --white:#fff;
+    --soc-bg-color :#2c313b ;
+    --bg-color :#181d25 ;
+    --primary:#0ef;
+    --Red:#1A1919;
+    --overlay-bage :#1a1919f1;
+    --bg-cards:#00000040;
+    --hover:rgb(56, 223, 235);
+    --background-input: #ffffff1e;
+
+}
+body {
+    background-image: url(../images/wallpaperflare.com_wallpaper\ \(2\).jpg);
+    background-position: center;
+    background-size: cover;
+    overflow-x: hidden;
+    font-family: "El Messiri", sans-serif ;
+    margin: 0 !important;
+    padding: 0 !important;
+}
+::-webkit-scrollbar {
+    width: 10px;
+}
+::-webkit-scrollbar-track{
+    background-color: #0000007c;
+    box-shadow: 0 0 15px var(--Black) inset;
+}
+::-webkit-scrollbar-thumb {
+    background-color: var(--blue);
+    border-radius: 25px;
+    -webkit-border-radius: 25px;
+    -moz-border-radius: 25px;
+    -ms-border-radius: 25px;
+    -o-border-radius: 25px;
+}
+.navbar {
+    background-color: rgba(0, 0, 0, 0.616)
+}
+/* Color of the links AFTER scroll */
+.navbar-scrolled .nav-link,
+.navbar-scrolled .navbar-toggler-icon,
+.navbar-scrolled .navbar-brand {
+  color: #fff;
+}
+
+/* Color of the navbar AFTER scroll */
+.navbar-scroll,
+.navbar-scrolled {
+  background-color: #cbbcb1;
+}
+.navbar-toggler ,
+.navbar-toggler:focus {
+    transition: all .4s;
+    box-shadow: none;
+    border: none;
+    outline: none;
+    -webkit-transition: all .4s;
+    -moz-transition: all .4s;
+    -ms-transition: all .4s;
+    -o-transition: all .4s;
+}
+.navbar-toggler-ico {
+    color: var(--white);
+}
+
+.navbar-toggler:focus .navbar-toggler-ico{
+    color: var(--blue) !important;
+}
+
+.navbar-toggler:hover .navbar-toggler-ico{
+    color: var(--blue) !important;
+}
+.active {
+    color: var(--blue) !important;
+}
+.nav-item a {
+    color: var(--white) ;
+    font-weight: 700;
+}
+.nav-item .nav-link:hover {
+    color: var(--blue) !important;
+
+}
+.nav-item .nav-link:hover~.line-nav {
+    background-color: var(--blue);
+    width: calc(100% - 10px);
+}
+.text-div .btn {
+    background-color: var(--blue) !important;
+    border: 0 !important;
+    font-weight: 500;
+    font-size: 18px;
+}
+.line-nav {
+    height: 2px;
+    width: 10px;
+    background-color: var(--white) ;
+    margin-left: 8px;
+    margin-top: -3px;
+}
+
+.active~.line-nav {
+    background-color: var(--blue);
+    width: calc(100% - 10px);
+}
+
+.contact:hover {
+    background-color: var(--blue) !important;
+    color : var(--Black)  !important;
+    letter-spacing: 2px;
+}
+
+.navbar-brand img {
+    width: 40px;
+}
+
+.file {
+    cursor: pointer;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    z-index: 5;
+}
+
+
+
+input[type= file] {
+    top: 0;
+    left: 0;
+    cursor: pointer;
+    opacity: 0;
+}
+
+input {
+   background-image: linear-gradient( to right, #ffffff46 0% , #00000042 100%); 
+   padding-right: 40px !important;
+}
+.input1 {
+    background-image: linear-gradient( to right, #ffffff46 0% , #00000042 100%); 
+
+}
+
+input:focus , .input1:focus {
+    border-color: var(--hover) !important;
+    outline: 0;
+    box-shadow: 0 0 7px 2px var(--hover) !important;
+}
+input:focus~.icon-input svg{
+    color: var(--hover);
+    transform: scale(1.2);
+    -webkit-transform: scale(1.2);
+    -moz-transform: scale(1.2);
+    -ms-transform: scale(1.2);
+    -o-transform: scale(1.2);
+}
+.icon-input {
+    top: 8px;
+    right: 15px;
+}
+.icon-input svg {
+    color: rgba(0, 238, 255, 0.26);
+}
+
+.perant-sign {
+    position: relative;
+    padding: 120px 0 50px 0;
+
+}
+.loginsu svg {
+
+    transform: scale(.9);
+    -webkit-transform: scale(.9);
+    -moz-transform: scale(.9);
+    -ms-transform: scale(.9);
+    -o-transform: scale(.9);
+
+}
+
+
+.loginsu:hover svg {
+    transform: scale(1.2);
+    -webkit-transform: scale(1.2);
+    -moz-transform: scale(1.2);
+    -ms-transform: scale(1.2);
+    -o-transform: scale(1.2);
+}
+
+.loginsu {
+    transition: .6s;
+    -webkit-transition: .6s;
+    -moz-transition: .6s;
+    -ms-transition: .6s;
+    -o-transition: .6s;
+}
+.loginsu:hover {
+    background-color: var(--primary) !important;
+    color: var(--white) !important;
+    border-color: var(--primary) !important;
+    letter-spacing: 2px;
+}
+.form-sign {
+    margin: auto;
+    background-image: linear-gradient( to top left, #000000dc 0%  , #ffffffe5 100% );
+    width: 80%;
+    padding: 40px;
+    padding-top: 10px;
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+    box-shadow: 0px 0px 9px 8px var(--hover);
+
+}
+
+
+nav {
+    z-index: 1000;
+}
+
+
+
+.input1::-webkit-scrollbar {
+    display: none !important;
+}
+label {
+    font-size: 14px;
+    font-weight: 400;
+    margin-bottom: 15px !important;
+}
+
+.card-upload{
+    width: 100%;
+
+    border: 1px dashed var(--primary);
+    border-radius: 8px;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    -ms-border-radius: 8px;
+    -o-border-radius: 8px;
+}
+.title-upload {
+    font-size: 18px;
+}
+.svg-upload {
+    position: relative;
+    width: 80px;
+    cursor: pointer;
+    z-index: 3;
+}
+.svg-upload:hover , .card-hover:hover .svg-upload{
+    transform:matrix(1.2,0.00,0.00,1.2,0,-15);
+    -ms-transform:matrix(1.2,0.00,0.00,1.2,0,-15);
+    -webkit-transform:matrix(1.2,0.00,0.00,1.2,0,-15);
+    -moz-transform:matrix(1.2,0.00,0.00,1.2,0,-15);
+    -o-transform:matrix(1.2,0.00,0.00,1.2,0,-15);
+}
+.drog-drop {
+    font-size: 14px;
+}
+.supported-text {
+    font-size: 11px;
+}
+.supported-type {
+    font-size: 12px;
+}
+.browse {
+    color: var(--primary);
+    cursor: pointer;
+}
+.browse:hover {
+    color: var(--hover);
+}
+.photo , #myimage  {
+    right: 0;
+    top: 0;
+    border-radius: 8px;
+    z-index: 2;
+}
+
+.m-logo {
+    color: var(--white);
+}
+
+.navbar-brand:hover .m-logo {
+    text-shadow: 8px 8px 25px var(--blue) ,  -8px -8px 25px var(--blue);
+}
+
+.top {
+    left: 4%;
+     font-size: 25px;
+ }
+
+
+
+
+
+
